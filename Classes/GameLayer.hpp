@@ -6,8 +6,8 @@
 //
 //
 
-#ifndef GameLayer_hpp
-#define GameLayer_hpp
+#include "cocos2d.h"
+#include "PlaneLayer.hpp"
 
 USING_NS_CC;
 
@@ -22,10 +22,14 @@ public:
     
     virtual bool init();
     
+    void backgroundMove(float dt);
+    
 private:
     Sprite* background1;
     Sprite* background2;
-    void backgroundMove(float dt);
+    
+    PlaneLayer* planeLayer;
+    
 };
 
-#endif /* GameLayer_hpp */
+

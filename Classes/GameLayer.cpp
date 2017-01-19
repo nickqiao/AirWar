@@ -11,6 +11,7 @@
 GameLayer::GameLayer() {
     background1 = nullptr;
     background2 = nullptr;
+    planeLayer = nullptr;
 }
 
 GameLayer::~GameLayer() {
@@ -38,6 +39,9 @@ bool GameLayer::init() {
         background2->setPosition(Point(0, background2->getContentSize().height - 2));
         background2->getTexture()->setAliasTexParameters();
         this->addChild(background2);
+        
+        this->planeLayer = PlaneLayer::create();
+        this->addChild(planeLayer);
         
         this->schedule(schedule_selector(GameLayer::backgroundMove), 0.01f);
         this->scheduleUpdate();

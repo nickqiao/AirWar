@@ -55,6 +55,8 @@
 		01F9935B1E2F8DD80082FAF0 /* font.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 01F993581E2F8DD80082FAF0 /* font.fnt */; };
 		01F9935C1E2F8DD80082FAF0 /* font.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F993591E2F8DD80082FAF0 /* font.png */; };
 		01F9935D1E2F8DD80082FAF0 /* font.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F993591E2F8DD80082FAF0 /* font.png */; };
+		01F993601E305FBC0082FAF0 /* PlaneLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01F9935E1E305FBC0082FAF0 /* PlaneLayer.cpp */; };
+		01F993611E305FBC0082FAF0 /* PlaneLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01F9935E1E305FBC0082FAF0 /* PlaneLayer.cpp */; };
 		1AC6FB21180E996B004C840B /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2d Mac.a */; };
 		1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -173,6 +175,8 @@
 		01F993501E2F8BDF0082FAF0 /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
 		01F993581E2F8DD80082FAF0 /* font.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = font.fnt; sourceTree = "<group>"; };
 		01F993591E2F8DD80082FAF0 /* font.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = font.png; sourceTree = "<group>"; };
+		01F9935E1E305FBC0082FAF0 /* PlaneLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlaneLayer.cpp; sourceTree = "<group>"; };
+		01F9935F1E305FBC0082FAF0 /* PlaneLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PlaneLayer.hpp; sourceTree = "<group>"; };
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -411,6 +415,8 @@
 				01F9930D1E2F65B80082FAF0 /* GameScene.hpp */,
 				01F993131E2F66AD0082FAF0 /* GameLayer.cpp */,
 				01F993141E2F66AD0082FAF0 /* GameLayer.hpp */,
+				01F9935E1E305FBC0082FAF0 /* PlaneLayer.cpp */,
+				01F9935F1E305FBC0082FAF0 /* PlaneLayer.hpp */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -656,6 +662,7 @@
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				01F9930E1E2F65B80082FAF0 /* GameScene.cpp in Sources */,
+				01F993601E305FBC0082FAF0 /* PlaneLayer.cpp in Sources */,
 				01F993151E2F66AD0082FAF0 /* GameLayer.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
@@ -668,6 +675,7 @@
 				01F993171E2F66BC0082FAF0 /* GameScene.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				01F993161E2F66AD0082FAF0 /* GameLayer.cpp in Sources */,
+				01F993611E305FBC0082FAF0 /* PlaneLayer.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,10 @@
 		01475D731E34404800DE322D /* WelcomeLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01475D701E34404800DE322D /* WelcomeLayer.cpp */; };
 		01475D761E344D1400DE322D /* GameOverLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01475D741E344D1400DE322D /* GameOverLayer.cpp */; };
 		01475D771E344D1400DE322D /* GameOverLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01475D741E344D1400DE322D /* GameOverLayer.cpp */; };
+		01475D7A1E34CBF000DE322D /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01475D781E34CBF000DE322D /* Enemy.cpp */; };
+		01475D7B1E34CBF000DE322D /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01475D781E34CBF000DE322D /* Enemy.cpp */; };
+		01475D7E1E34CE8F00DE322D /* EnemyLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01475D7C1E34CE8F00DE322D /* EnemyLayer.cpp */; };
+		01475D7F1E34CE8F00DE322D /* EnemyLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01475D7C1E34CE8F00DE322D /* EnemyLayer.cpp */; };
 		01F9930E1E2F65B80082FAF0 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01F9930C1E2F65B80082FAF0 /* GameScene.cpp */; };
 		01F993151E2F66AD0082FAF0 /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01F993131E2F66AD0082FAF0 /* GameLayer.cpp */; };
 		01F993161E2F66AD0082FAF0 /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01F993131E2F66AD0082FAF0 /* GameLayer.cpp */; };
@@ -163,6 +167,10 @@
 		01475D711E34404800DE322D /* WelcomeLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WelcomeLayer.hpp; sourceTree = "<group>"; };
 		01475D741E344D1400DE322D /* GameOverLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameOverLayer.cpp; sourceTree = "<group>"; };
 		01475D751E344D1400DE322D /* GameOverLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameOverLayer.hpp; sourceTree = "<group>"; };
+		01475D781E34CBF000DE322D /* Enemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Enemy.cpp; sourceTree = "<group>"; };
+		01475D791E34CBF000DE322D /* Enemy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Enemy.hpp; sourceTree = "<group>"; };
+		01475D7C1E34CE8F00DE322D /* EnemyLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyLayer.cpp; sourceTree = "<group>"; };
+		01475D7D1E34CE8F00DE322D /* EnemyLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EnemyLayer.hpp; sourceTree = "<group>"; };
 		01F9930C1E2F65B80082FAF0 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
 		01F9930D1E2F65B80082FAF0 /* GameScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameScene.hpp; sourceTree = "<group>"; };
 		01F993131E2F66AD0082FAF0 /* GameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameLayer.cpp; sourceTree = "<group>"; };
@@ -441,6 +449,10 @@
 				01475D711E34404800DE322D /* WelcomeLayer.hpp */,
 				01475D741E344D1400DE322D /* GameOverLayer.cpp */,
 				01475D751E344D1400DE322D /* GameOverLayer.hpp */,
+				01475D781E34CBF000DE322D /* Enemy.cpp */,
+				01475D791E34CBF000DE322D /* Enemy.hpp */,
+				01475D7C1E34CE8F00DE322D /* EnemyLayer.cpp */,
+				01475D7D1E34CE8F00DE322D /* EnemyLayer.hpp */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -682,7 +694,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01475D7A1E34CBF000DE322D /* Enemy.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				01475D7E1E34CE8F00DE322D /* EnemyLayer.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				01475D761E344D1400DE322D /* GameOverLayer.cpp in Sources */,
 				01475D721E34404800DE322D /* WelcomeLayer.cpp in Sources */,
@@ -702,7 +716,9 @@
 			files = (
 				01475D771E344D1400DE322D /* GameOverLayer.cpp in Sources */,
 				01F993171E2F66BC0082FAF0 /* GameScene.cpp in Sources */,
+				01475D7B1E34CBF000DE322D /* Enemy.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				01475D7F1E34CE8F00DE322D /* EnemyLayer.cpp in Sources */,
 				01475D731E34404800DE322D /* WelcomeLayer.cpp in Sources */,
 				01F993161E2F66AD0082FAF0 /* GameLayer.cpp in Sources */,
 				01F993611E305FBC0082FAF0 /* PlaneLayer.cpp in Sources */,

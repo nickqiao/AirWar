@@ -8,10 +8,14 @@
 
 #include "GameLayer.hpp"
 
+Level GameLayer::level = EASY;
+
 GameLayer::GameLayer() {
     background1 = nullptr;
     background2 = nullptr;
     planeLayer = nullptr;
+    bulletLayer = nullptr;
+    enemyLayer = nullptr;
 }
 
 GameLayer::~GameLayer() {
@@ -44,8 +48,18 @@ bool GameLayer::init() {
         this->addChild(bulletLayer);
         bulletLayer->StartShoot();
         
+        this->enemyLayer = EnemyLayer::create();
+        this->addChild(enemyLayer);
+        
+        auto listener = EventListenerTouchOneByOne::create();
+        listener->onTouchBegan = CC_CALLBACK_2(GameLayer::onTouchBegan, this);
+        listener->onTouchMoved = CC_CALLBACK_2(GameLayer::onTouchMoved, this);
+        listener->onTouchEnded = CC_CALLBACK_2(GameLayer::onTouchEnded, this);
+        _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+        
         this->schedule(schedule_selector(GameLayer::backgroundMove), 0.01f);
         this->scheduleUpdate();
+        
         bRet = true;
     } while (0);
     return bRet;
@@ -60,3 +74,34 @@ void GameLayer::backgroundMove(float dt) {
         background1->setPositionY(0);
     }
 }
+
+bool GameLayer::onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *event) {
+    return true;
+}
+
+void GameLayer::onTouchMoved(cocos2d::Touch *touch, cocos2d::Event *event) {
+    if (this->planeLayer->isAlive) {
+        Point beginPoint = touch->getLocation();
+        Rect planeRect = this->planeLayer->getChildByTag(AIRPLANE)->getBoundingBox();
+        planeRect.origin.x -= 15;
+        planeRect.origin.y -= 15;
+        planeRect.size.width += 30;
+        planeRect.size.height += 30;
+        if (planeRect.containsPoint(this->getParent()->convertTouchToNodeSpace(touch))) {
+            Point endPoint = touch->getPreviousLocation();
+            
+            Point offSet = beginPoint - endPoint;
+            Point toPoint = this->planeLayer->getChildByTag(AIRPLANE)->getPosition() + offSet;
+            this->planeLayer->MoveTo(toPoint);
+        }
+    }
+}
+
+void GameLayer::onTouchEnded(cocos2d::Touch *touch, cocos2d::Event *event) {
+
+}
+
+Level GameLayer::getCurLevel() {
+    return level;
+}
+

@@ -11,6 +11,8 @@
 PlaneLayer* PlaneLayer::sharedPlane = nullptr;
 
 PlaneLayer::PlaneLayer() {
+    isAlive = true;
+    score = 0;
 }
 
 PlaneLayer::~PlaneLayer() {
@@ -60,7 +62,23 @@ bool PlaneLayer::init() {
 }
 
 void PlaneLayer::MoveTo(Point location) {
-    
+    if (isAlive && !Director::getInstance()->isPaused()) {
+        auto winSize = Director::getInstance()->getWinSize();
+        auto planeSize = this->getChildByTag(AIRPLANE)->getContentSize();
+        if (location.x < planeSize.width / 2) {
+            location.x = planeSize.width / 2;
+        }
+        if (location.x > winSize.width - planeSize.width / 2) {
+            location.x = winSize.width - planeSize.width / 2;
+        }
+        if (location.y < planeSize.height / 2) {
+            location.y = planeSize.width / 2 + 10;
+        }
+        if (location.y > winSize.height - planeSize.height / 2) {
+            location.y = winSize.height - planeSize.height / 2;
+        }
+        this->getChildByTag(AIRPLANE)->setPosition(location);
+    }
 }
 
 void PlaneLayer::Blowup(int passScore) {

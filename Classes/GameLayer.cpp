@@ -25,9 +25,6 @@ bool GameLayer::init() {
             return false;
         }
         
-        SpriteFrameCache::getInstance()->addSpriteFramesWithFile("shoot_background.plist");
-        SpriteFrameCache::getInstance()->addSpriteFramesWithFile("shoot.plist");
-        
         background1 = Sprite::createWithSpriteFrameName("background.png");
         background1->setAnchorPoint(Point::ZERO);
         background1->setPosition(Point::ZERO);
@@ -42,6 +39,10 @@ bool GameLayer::init() {
         
         this->planeLayer = PlaneLayer::create();
         this->addChild(planeLayer);
+        
+        this->bulletLayer = BulletLayer::create();
+        this->addChild(bulletLayer);
+        bulletLayer->StartShoot();
         
         this->schedule(schedule_selector(GameLayer::backgroundMove), 0.01f);
         this->scheduleUpdate();

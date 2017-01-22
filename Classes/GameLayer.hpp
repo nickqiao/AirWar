@@ -8,7 +8,7 @@
 
 #include "cocos2d.h"
 #include "PlaneLayer.hpp"
-
+#include "BulletLayer.hpp"
 USING_NS_CC;
 
 class GameLayer : public Layer {
@@ -29,7 +29,7 @@ private:
     Sprite* background2;
     
     PlaneLayer* planeLayer;
-    
+    BulletLayer* bulletLayer;
 };
 
 

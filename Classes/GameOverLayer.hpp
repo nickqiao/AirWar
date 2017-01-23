@@ -25,6 +25,8 @@ public:
     void menuBackCallback(Ref* pSender);
     
     void beginChangeHighestScore(Node* pNode);
+    
+    void showAD();
   
 public:
     
@@ -32,6 +34,6 @@ public:
     
     static int highestHistoryScore;
     
-    Label* highestScore;
+    Label* highestScoreLabel;
     
 };

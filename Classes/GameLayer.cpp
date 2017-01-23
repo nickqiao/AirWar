@@ -17,6 +17,7 @@ GameLayer::GameLayer() {
     bulletLayer = nullptr;
     enemyLayer = nullptr;
     controlLayer = nullptr;
+    score = 0;
 }
 
 GameLayer::~GameLayer() {

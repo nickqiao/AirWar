@@ -12,7 +12,7 @@
 
 USING_NS_CC;
 
-const int MAX_SCORE=1000000000;
+const int MAX_SCORE = 1000000000;
 
 class ControlLayer : public Layer {
     

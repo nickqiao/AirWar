@@ -23,15 +23,14 @@ bool NoTouchLayer::init(){
     return true;
 }
 
-bool NoTouchLayer::onTouchBegan (Touch *touch, Event *event)
-{
+bool NoTouchLayer::onTouchBegan (Touch *touch, Event *event) {
     return true;
 }
 
-void NoTouchLayer::onTouchMoved (Touch *touch, Event *event)
-{
+void NoTouchLayer::onTouchMoved (Touch *touch, Event *event) {
+    
 }
 
-void NoTouchLayer::onTouchEnded (Touch *touch, Event *event)
-{  
+void NoTouchLayer::onTouchEnded (Touch *touch, Event *event) {
+    
 }

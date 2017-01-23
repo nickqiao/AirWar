@@ -26,5 +26,6 @@ public:
     void PreloadMusic();
     
 public:
+    
     WelcomeLayer* _welcomeLayer;
 };

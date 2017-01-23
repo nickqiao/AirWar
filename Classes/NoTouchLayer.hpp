@@ -18,6 +18,8 @@ public:
     CREATE_FUNC(NoTouchLayer);
     
     virtual bool onTouchBegan (Touch *touch, Event *event);
+    
     virtual void onTouchMoved (Touch *touch, Event *event);
+    
     virtual void onTouchEnded (Touch *touch, Event *event);
 };

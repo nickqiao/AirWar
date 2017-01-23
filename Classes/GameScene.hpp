@@ -6,8 +6,6 @@
 //
 //
 
-#ifndef GameScene_hpp
-#define GameScene_hpp
 
 #include "cocos2d.h"
 #include "GameLayer.hpp"
@@ -29,4 +27,4 @@ public:
     
 };
 
-#endif /* GameScene_hpp */
+

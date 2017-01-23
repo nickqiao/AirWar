@@ -11,6 +11,8 @@
 #include "BulletLayer.hpp"
 #include "EnemyLayer.hpp"
 #include "ControlLayer.hpp"
+#include "MutiBulletsLayer.hpp"
+#include "UFOLayer.hpp"
 
 USING_NS_CC;
 
@@ -44,6 +46,10 @@ public:
     
     void update(float dt);
     
+    void menuBigBoomCallback(Ref* pSender);
+    
+    void updateBigBoomItem(int bigBoomCount);
+    
     static Level getCurLevel();
     
 private:
@@ -54,13 +60,26 @@ private:
     BulletLayer* bulletLayer;
     EnemyLayer* enemyLayer;
     ControlLayer* controlLayer;
+    MutiBulletsLayer* mutiBulletLayer;
+    UFOLayer* ufoLayer;
+    
+    Menu* menuBigBoom;
+    Label* bigBoomCountItem;
     
     int score;
+    int bigBoomCount;
     static Level level;
     
     void dealWithEnemy1Collide(__Array* bulletsToDelete);
     void dealWithEnemy2Collide(__Array* bulletsToDelete);
     void dealWithEnemy3Collide(__Array* bulletsToDelete);
+    
+    void mutiBulletEnemy1Collide(__Array* mutiBulletsToDelete);
+    void mutiBulletEnemy2Collide(__Array* mutiBulletsToDelete);
+    void mutiBulletEnemy3Collide(__Array* mutiBulletsToDelete);
+    
+    void ufoCollide();
+    void bigBoom();
     
     void checkPlaneCollide();
     

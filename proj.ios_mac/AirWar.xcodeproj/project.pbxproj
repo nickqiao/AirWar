@@ -11,6 +11,12 @@
 		013935FB1E35A25B0082A411 /* ControlLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 013935F81E35A25B0082A411 /* ControlLayer.cpp */; };
 		013935FF1E35D73A0082A411 /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 013935FD1E35D73A0082A411 /* GameOverScene.cpp */; };
 		013936001E35D73A0082A411 /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 013935FD1E35D73A0082A411 /* GameOverScene.cpp */; };
+		013936031E3609290082A411 /* UFOLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 013936011E3609290082A411 /* UFOLayer.cpp */; };
+		013936041E3609290082A411 /* UFOLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 013936011E3609290082A411 /* UFOLayer.cpp */; };
+		013936071E361EB10082A411 /* MutiBulletsLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 013936051E361EB10082A411 /* MutiBulletsLayer.cpp */; };
+		013936081E361EB10082A411 /* MutiBulletsLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 013936051E361EB10082A411 /* MutiBulletsLayer.cpp */; };
+		0139360B1E362EF20082A411 /* NoTouchLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 013936091E362EF20082A411 /* NoTouchLayer.cpp */; };
+		0139360C1E362EF20082A411 /* NoTouchLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 013936091E362EF20082A411 /* NoTouchLayer.cpp */; };
 		01475D6D1E34403200DE322D /* WelcomeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01475D6B1E34403200DE322D /* WelcomeScene.cpp */; };
 		01475D6E1E34403200DE322D /* WelcomeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01475D6B1E34403200DE322D /* WelcomeScene.cpp */; };
 		01475D721E34404800DE322D /* WelcomeLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01475D701E34404800DE322D /* WelcomeLayer.cpp */; };
@@ -169,6 +175,12 @@
 		013935F91E35A25B0082A411 /* ControlLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ControlLayer.hpp; sourceTree = "<group>"; };
 		013935FD1E35D73A0082A411 /* GameOverScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameOverScene.cpp; sourceTree = "<group>"; };
 		013935FE1E35D73A0082A411 /* GameOverScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameOverScene.hpp; sourceTree = "<group>"; };
+		013936011E3609290082A411 /* UFOLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UFOLayer.cpp; sourceTree = "<group>"; };
+		013936021E3609290082A411 /* UFOLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UFOLayer.hpp; sourceTree = "<group>"; };
+		013936051E361EB10082A411 /* MutiBulletsLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MutiBulletsLayer.cpp; sourceTree = "<group>"; };
+		013936061E361EB10082A411 /* MutiBulletsLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MutiBulletsLayer.hpp; sourceTree = "<group>"; };
+		013936091E362EF20082A411 /* NoTouchLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoTouchLayer.cpp; sourceTree = "<group>"; };
+		0139360A1E362EF20082A411 /* NoTouchLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NoTouchLayer.hpp; sourceTree = "<group>"; };
 		01475D6B1E34403200DE322D /* WelcomeScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WelcomeScene.cpp; sourceTree = "<group>"; };
 		01475D6C1E34403200DE322D /* WelcomeScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WelcomeScene.hpp; sourceTree = "<group>"; };
 		01475D701E34404800DE322D /* WelcomeLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WelcomeLayer.cpp; sourceTree = "<group>"; };
@@ -465,6 +477,12 @@
 				013935F91E35A25B0082A411 /* ControlLayer.hpp */,
 				013935FD1E35D73A0082A411 /* GameOverScene.cpp */,
 				013935FE1E35D73A0082A411 /* GameOverScene.hpp */,
+				013936011E3609290082A411 /* UFOLayer.cpp */,
+				013936021E3609290082A411 /* UFOLayer.hpp */,
+				013936051E361EB10082A411 /* MutiBulletsLayer.cpp */,
+				013936061E361EB10082A411 /* MutiBulletsLayer.hpp */,
+				013936091E362EF20082A411 /* NoTouchLayer.cpp */,
+				0139360A1E362EF20082A411 /* NoTouchLayer.hpp */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -710,6 +728,7 @@
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				01475D7E1E34CE8F00DE322D /* EnemyLayer.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				013936031E3609290082A411 /* UFOLayer.cpp in Sources */,
 				01475D761E344D1400DE322D /* GameOverLayer.cpp in Sources */,
 				01475D721E34404800DE322D /* WelcomeLayer.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
@@ -719,7 +738,9 @@
 				013935FA1E35A25B0082A411 /* ControlLayer.cpp in Sources */,
 				01F993601E305FBC0082FAF0 /* PlaneLayer.cpp in Sources */,
 				01F993641E309D320082FAF0 /* BulletLayer.cpp in Sources */,
+				013936071E361EB10082A411 /* MutiBulletsLayer.cpp in Sources */,
 				01F993151E2F66AD0082FAF0 /* GameLayer.cpp in Sources */,
+				0139360B1E362EF20082A411 /* NoTouchLayer.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -728,6 +749,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013936081E361EB10082A411 /* MutiBulletsLayer.cpp in Sources */,
 				01475D771E344D1400DE322D /* GameOverLayer.cpp in Sources */,
 				01F993171E2F66BC0082FAF0 /* GameScene.cpp in Sources */,
 				01475D7B1E34CBF000DE322D /* Enemy.cpp in Sources */,
@@ -740,6 +762,8 @@
 				01475D6E1E34403200DE322D /* WelcomeScene.cpp in Sources */,
 				01F993651E309D320082FAF0 /* BulletLayer.cpp in Sources */,
 				013936001E35D73A0082A411 /* GameOverScene.cpp in Sources */,
+				013936041E3609290082A411 /* UFOLayer.cpp in Sources */,
+				0139360C1E362EF20082A411 /* NoTouchLayer.cpp in Sources */,
 				013935FB1E35A25B0082A411 /* ControlLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

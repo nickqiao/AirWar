@@ -8,6 +8,7 @@
 
 #include "WelcomeLayer.hpp"
 #include "GameScene.hpp"
+#include "GameOverLayer.hpp"
 
 WelcomeLayer::WelcomeLayer() {
 
@@ -82,6 +83,6 @@ bool WelcomeLayer::isHaveSaveFile() {
 
 void WelcomeLayer::getHighestHistoryScore() {
     if (isHaveSaveFile()) {
-        // TODO
+        GameOverLayer::highestHistoryScore = UserDefault::getInstance()->getIntegerForKey("HighestScore",0);
     }
 }

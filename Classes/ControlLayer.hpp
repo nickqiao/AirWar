@@ -7,6 +7,8 @@
 //
 
 #include "cocos2d.h"
+#include "SimpleAudioEngine.h"
+#include "NoTouchLayer.hpp"
 
 USING_NS_CC;
 
@@ -34,5 +36,5 @@ public:
     
     MenuItemSprite* pPauseItem;
     
-   // NoTouchLayer* noTouchLayer;
+    NoTouchLayer* noTouchLayer;
 };

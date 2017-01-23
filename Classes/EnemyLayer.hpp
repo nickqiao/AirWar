@@ -51,11 +51,11 @@ public:
     void removeAllEnemy3();
     void removeAllEnemy();
     
-private:
-    
     __Array* m_pAllEnemy1;
     __Array* m_pAllEnemy2;
     __Array* m_pAllEnemy3;
+    
+private:
     
     SpriteFrame* enemy1SpriteFrame;
     SpriteFrame* enemy2SpriteFrame;

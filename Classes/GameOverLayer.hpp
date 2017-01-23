@@ -7,6 +7,7 @@
 //
 
 #include "cocos2d.h"
+#include "SimpleAudioEngine.h"
 
 USING_NS_CC;
 
@@ -19,6 +20,18 @@ public:
     
     virtual bool init();
     
+    static GameOverLayer* create(int score);
     
+    void menuBackCallback(Ref* pSender);
+    
+    void beginChangeHighestScore(Node* pNode);
+  
+public:
+    
+    int score;
+    
+    static int highestHistoryScore;
+    
+    Label* highestScore;
     
 };

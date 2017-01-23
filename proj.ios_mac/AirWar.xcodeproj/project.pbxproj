@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		013935FA1E35A25B0082A411 /* ControlLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 013935F81E35A25B0082A411 /* ControlLayer.cpp */; };
+		013935FB1E35A25B0082A411 /* ControlLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 013935F81E35A25B0082A411 /* ControlLayer.cpp */; };
+		013935FF1E35D73A0082A411 /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 013935FD1E35D73A0082A411 /* GameOverScene.cpp */; };
+		013936001E35D73A0082A411 /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 013935FD1E35D73A0082A411 /* GameOverScene.cpp */; };
 		01475D6D1E34403200DE322D /* WelcomeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01475D6B1E34403200DE322D /* WelcomeScene.cpp */; };
 		01475D6E1E34403200DE322D /* WelcomeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01475D6B1E34403200DE322D /* WelcomeScene.cpp */; };
 		01475D721E34404800DE322D /* WelcomeLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01475D701E34404800DE322D /* WelcomeLayer.cpp */; };
@@ -161,6 +165,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		013935F81E35A25B0082A411 /* ControlLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ControlLayer.cpp; sourceTree = "<group>"; };
+		013935F91E35A25B0082A411 /* ControlLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ControlLayer.hpp; sourceTree = "<group>"; };
+		013935FD1E35D73A0082A411 /* GameOverScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameOverScene.cpp; sourceTree = "<group>"; };
+		013935FE1E35D73A0082A411 /* GameOverScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameOverScene.hpp; sourceTree = "<group>"; };
 		01475D6B1E34403200DE322D /* WelcomeScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WelcomeScene.cpp; sourceTree = "<group>"; };
 		01475D6C1E34403200DE322D /* WelcomeScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WelcomeScene.hpp; sourceTree = "<group>"; };
 		01475D701E34404800DE322D /* WelcomeLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WelcomeLayer.cpp; sourceTree = "<group>"; };
@@ -453,6 +461,10 @@
 				01475D791E34CBF000DE322D /* Enemy.hpp */,
 				01475D7C1E34CE8F00DE322D /* EnemyLayer.cpp */,
 				01475D7D1E34CE8F00DE322D /* EnemyLayer.hpp */,
+				013935F81E35A25B0082A411 /* ControlLayer.cpp */,
+				013935F91E35A25B0082A411 /* ControlLayer.hpp */,
+				013935FD1E35D73A0082A411 /* GameOverScene.cpp */,
+				013935FE1E35D73A0082A411 /* GameOverScene.hpp */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -701,8 +713,10 @@
 				01475D761E344D1400DE322D /* GameOverLayer.cpp in Sources */,
 				01475D721E34404800DE322D /* WelcomeLayer.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				013935FF1E35D73A0082A411 /* GameOverScene.cpp in Sources */,
 				01475D6D1E34403200DE322D /* WelcomeScene.cpp in Sources */,
 				01F9930E1E2F65B80082FAF0 /* GameScene.cpp in Sources */,
+				013935FA1E35A25B0082A411 /* ControlLayer.cpp in Sources */,
 				01F993601E305FBC0082FAF0 /* PlaneLayer.cpp in Sources */,
 				01F993641E309D320082FAF0 /* BulletLayer.cpp in Sources */,
 				01F993151E2F66AD0082FAF0 /* GameLayer.cpp in Sources */,
@@ -725,6 +739,8 @@
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				01475D6E1E34403200DE322D /* WelcomeScene.cpp in Sources */,
 				01F993651E309D320082FAF0 /* BulletLayer.cpp in Sources */,
+				013936001E35D73A0082A411 /* GameOverScene.cpp in Sources */,
+				013935FB1E35A25B0082A411 /* ControlLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

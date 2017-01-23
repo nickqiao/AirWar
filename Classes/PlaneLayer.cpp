@@ -7,6 +7,7 @@
 //
 
 #include "PlaneLayer.hpp"
+#include "GameOverScene.hpp"
 
 PlaneLayer* PlaneLayer::sharedPlane = nullptr;
 
@@ -82,9 +83,27 @@ void PlaneLayer::MoveTo(Point location) {
 }
 
 void PlaneLayer::Blowup(int passScore) {
-    
+    if (isAlive) {
+        isAlive = false;
+        score = passScore;
+        auto animation = Animation::create();
+        animation->setDelayPerUnit(0.2f);
+        animation->addSpriteFrame(SpriteFrameCache::getInstance()->getSpriteFrameByName("hero_blowup_n1.png"));
+        animation->addSpriteFrame(SpriteFrameCache::getInstance()->getSpriteFrameByName("hero_blowup_n2.png"));
+        animation->addSpriteFrame(SpriteFrameCache::getInstance()->getSpriteFrameByName("hero_blowup_n3.png"));
+        animation->addSpriteFrame(SpriteFrameCache::getInstance()->getSpriteFrameByName("hero_blowup_n4.png"));
+        
+        auto animate = Animate::create(animation);
+        auto removePlane = CallFuncN::create(CC_CALLBACK_0(PlaneLayer::RemovePlane, this));
+        auto sequence = Sequence::create(animate, removePlane, NULL);
+        this->getChildByTag(AIRPLANE)->stopAllActions();
+        this->getChildByTag(AIRPLANE)->runAction(sequence);
+    }
 }
 
 void PlaneLayer::RemovePlane() {
-
+    this->removeChildByTag(AIRPLANE);
+    auto pScene = GameOverScene::create(score);
+    auto animateScene = TransitionMoveInT::create(0.8f, pScene);
+    Director::getInstance()->replaceScene(animateScene);
 }

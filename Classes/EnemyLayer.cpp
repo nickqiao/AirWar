@@ -251,7 +251,7 @@ void EnemyLayer::addEnemy3(float dt) {
     int rangeX = maxX-minX;
     int actualX = (rand()%rangeX)+minX;
     
-    enemy3->setPosition(Point(actualX, winSize.height+enemy3Size.height/2));
+    enemy3->setPosition(Point(actualX, winSize.height + enemy3Size.height/2));
     this->addChild(enemy3);
     this->m_pAllEnemy3->addObject(enemy3);
     
@@ -276,7 +276,7 @@ void EnemyLayer::addEnemy3(float dt) {
     }
     
     int rangeDuration = maxDuration - minDuration;
-    int actualDuration = (rand()%rangeDuration)+minDuration;
+    int actualDuration = (rand()%rangeDuration) + minDuration;
     
     auto actionMove = MoveTo::create(actualDuration, Point(actualX, 0-enemy3->getSprite()->getContentSize().height/2));
     auto actionDone = CallFuncN::create(CC_CALLBACK_1(EnemyLayer::enemy3MoveFinished, this));

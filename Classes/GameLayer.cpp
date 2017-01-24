@@ -32,8 +32,12 @@ GameLayer::~GameLayer() {
 bool GameLayer::init() {
     bool bRet = false;
     do {
-        if (!Layer::init()) {
-            return false;
+        CC_BREAK_IF(!Layer::init());
+        
+        level = EASY;
+        
+        if (!CocosDenshion::SimpleAudioEngine::getInstance()->isBackgroundMusicPlaying()) {
+            CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("game_music.mp3",true);
         }
         
         background1 = Sprite::createWithSpriteFrameName("background.png");

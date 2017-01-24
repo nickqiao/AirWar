@@ -17,8 +17,8 @@
 USING_NS_CC;
 
 const int ENEMY1_SCORE = 1000;
-const int ENEMY2_SCORE = 1000;
-const int ENEMY3_SCORE = 1000;
+const int ENEMY2_SCORE = 6000;
+const int ENEMY3_SCORE = 30000;
 
 const int MAX_BIGBOOM_COUNT = 100000;
 const int TAG_BIGBOOM_MENUITEM = 1;

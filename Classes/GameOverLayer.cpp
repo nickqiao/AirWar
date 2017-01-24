@@ -99,7 +99,7 @@ GameOverLayer* GameOverLayer::create(int score) {
 
 void GameOverLayer::menuBackCallback(cocos2d::Ref *pSender) {
     auto pScene = GameScene::create();
-    auto animateScene = TransitionSlideInL::create(0.8f, pScene);
+    auto animateScene = TransitionSlideInL::create(1.0f, pScene);
     Director::getInstance()->replaceScene(animateScene);
 }
 

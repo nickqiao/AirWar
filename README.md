@@ -6,4 +6,4 @@ Wechat airplane war using cocos2d
 ### iOS能直接在真机和模拟器上玩,
 ### Android需要针对Android Studio进行编译,步骤如下:
 ### 1 cd到程序目录
-### 执行 cocos compile -p android  --android-studio ,安装到安卓手机
+### 2 执行 cocos compile -p android  --android-studio ,安装到安卓手机

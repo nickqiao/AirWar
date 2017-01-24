@@ -1,5 +1,6 @@
 # AirWar
-Wechat airplane war using cocos2d
+Wechat airplane war using cocos2d-x,you can play on iOS and Android. 
+
 
 ### 微信版 飞机大战
 ### 早期微信的打飞机版本,经测试能在iOS,Android,Mac平台运行,其他平台未测试(可能需要针对不同平台单独配置编译)
